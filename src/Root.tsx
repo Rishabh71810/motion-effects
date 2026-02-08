@@ -10,6 +10,9 @@ import { TypoSwap } from "./TypoSwap";
 import { TagReveal } from "./TagReveal";
 import { MeetYourNew } from "./MeetYourNew";
 import { MeetYourNewCombined } from "./MeetYourNewCombined";
+import { HeyEveryone } from "./HeyEveryone";
+import { CardCarousel } from "./CardCarousel";
+import { HeyEveryoneCombined } from "./HeyEveryoneCombined";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -18,6 +21,30 @@ export const RemotionRoot: React.FC = () => {
         id="MeetYourNewCombined"
         component={MeetYourNewCombined}
         durationInFrames={1110}
+        fps={30}
+        width={1280}
+        height={720}
+      />
+      <Composition
+        id="HeyEveryoneCombined"
+        component={HeyEveryoneCombined}
+        durationInFrames={330}
+        fps={30}
+        width={1280}
+        height={720}
+      />
+      <Composition
+        id="HeyEveryone"
+        component={HeyEveryone}
+        durationInFrames={120}
+        fps={30}
+        width={1280}
+        height={720}
+      />
+      <Composition
+        id="CardCarousel"
+        component={CardCarousel}
+        durationInFrames={210}
         fps={30}
         width={1280}
         height={720}
