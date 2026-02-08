@@ -1,3 +1,5 @@
+import { FlickeringText } from "./FlickeringText";
+
 export const MyComposition = () => {
-  return null;
+  return <FlickeringText />;
 };
