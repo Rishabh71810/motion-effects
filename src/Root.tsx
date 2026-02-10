@@ -13,10 +13,23 @@ import { MeetYourNewCombined } from "./MeetYourNewCombined";
 import { HeyEveryone } from "./HeyEveryone";
 import { CardCarousel } from "./CardCarousel";
 import { HeyEveryoneCombined } from "./HeyEveryoneCombined";
+import { KineticTypography } from "./KineticTypography";
+import { Kinetic3DTypography } from "./Kinetic3DTypography";
+import { ShortcutsMotion } from "./ShortcutsMotion";
+import { PillExpand } from "./PillExpand";
+import { SuccessQuote } from "./SuccessQuote";
 
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      <Composition
+        id="SuccessQuote"
+        component={SuccessQuote}
+        durationInFrames={390}
+        fps={30}
+        width={1080}
+        height={1080}
+      />
       <Composition
         id="MeetYourNewCombined"
         component={MeetYourNewCombined}
@@ -45,6 +58,38 @@ export const RemotionRoot: React.FC = () => {
         id="CardCarousel"
         component={CardCarousel}
         durationInFrames={210}
+        fps={30}
+        width={1280}
+        height={720}
+      />
+      <Composition
+        id="PillExpand"
+        component={PillExpand}
+        durationInFrames={210}
+        fps={30}
+        width={1280}
+        height={720}
+      />
+      <Composition
+        id="ShortcutsMotion"
+        component={ShortcutsMotion}
+        durationInFrames={660}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="Kinetic3DTypography"
+        component={Kinetic3DTypography}
+        durationInFrames={300}
+        fps={30}
+        width={1280}
+        height={720}
+      />
+      <Composition
+        id="KineticTypography"
+        component={KineticTypography}
+        durationInFrames={270}
         fps={30}
         width={1280}
         height={720}
