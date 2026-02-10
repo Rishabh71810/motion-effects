@@ -18,10 +18,19 @@ import { Kinetic3DTypography } from "./Kinetic3DTypography";
 import { ShortcutsMotion } from "./ShortcutsMotion";
 import { PillExpand } from "./PillExpand";
 import { SuccessQuote } from "./SuccessQuote";
+import { GlassPlusExpand } from "./GlassPlusExpand";
 
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      <Composition
+        id="GlassPlusExpand"
+        component={GlassPlusExpand}
+        durationInFrames={420}
+        fps={30}
+        width={1280}
+        height={720}
+      />
       <Composition
         id="SuccessQuote"
         component={SuccessQuote}
